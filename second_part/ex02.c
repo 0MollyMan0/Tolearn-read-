@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex01.c                                             :+:      :+:    :+:   */
+/*   ex02.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anfouger <anfouger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 15:12:24 by anfouger          #+#    #+#             */
-/*   Updated: 2025/11/03 15:33:38 by anfouger         ###   ########.fr       */
+/*   Created: 2025/11/03 15:34:32 by anfouger          #+#    #+#             */
+/*   Updated: 2025/11/03 15:34:42 by anfouger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,7 @@
 
 void print_n(const char *file, int n)
 {
-	int fd;
-	ssize_t bytes;
-	char *buffer;
-
-	buffer = malloc(n);
-	fd = open(file, O_RDONLY);
-	if (!buffer || fd == -1)
-	{
-    	close(fd);
-    	return;
-	}
-	bytes = read(fd, buffer, n);
-	if (bytes != -1)
-		write(1, buffer, bytes);
-	free(buffer);
-	close(fd);
+	
 }
 
 int main(int argc, char const *argv[])
@@ -45,4 +30,3 @@ int main(int argc, char const *argv[])
     print_n(argv[1], atoi(argv[2]));
     return (0);
 }
-

@@ -6,13 +6,12 @@
 /*   By: anfouger <anfouger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 15:34:32 by anfouger          #+#    #+#             */
-/*   Updated: 2025/11/03 15:46:35 by anfouger         ###   ########.fr       */
+/*   Updated: 2025/11/04 09:12:33 by anfouger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 void print_all(const char *name, int n)
